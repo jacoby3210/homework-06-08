@@ -1,0 +1,172 @@
+/* basics */
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+header {
+    height: 75px;
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222222;
+}
+
+main {
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+menu { 
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 33px; 
+
+}
+
+/*  */
+
+.accent {
+    color: #F16D7F;
+}
+
+.rectangle {
+    height: 92px;
+    width: 12px;
+    background-color: #F16D7F;
+}
+
+/* header */
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 41px;
+    align-items: baseline;
+}
+
+.menu_button {
+    height: 32px; 
+    width: 32px; 
+    background: none;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search {
+    background-image: url(res/search.svg);
+}
+.settings {
+    background-image: url(res/settings.svg);
+}
+.profile  {
+    background-image: url(res/profile.svg);
+}
+.payment  {
+    background-image: url(res/payment.svg);
+}
+
+/*  */
+
+.showcase {
+    width: 100%;
+    background-color: #F1E4E6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 69px;
+}
+
+.offers {
+    padding: 65px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 260px; 
+    gap: 30px;
+}
+
+.offer_sample {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.offer_for_woman {
+    background-image: url(res/Group\ 36.png);
+}
+
+.offer_for_man {
+    background-image: url(res/Group\ 37.jpg);
+}
+
+.offer_for_kids {
+    background-image: url(res/Group\ 38.jpg);
+}
+
+.offer_accesories {
+    background-image: url(res/Group\ 39.jpg);
+    grid-column: 1 / 4;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h3 span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* THE BRAND OF LUXERIOUS FASHION */
+ 
+h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    
+    color: #222222;
+    margin: 0px;
+}
+
+h1 span {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #222222;
+}
