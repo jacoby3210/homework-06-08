@@ -10,6 +10,51 @@ body {
     font-style: normal;
 }
 
+h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    
+    color: #222222;
+    margin: 0px;
+}
+
+h1 span {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #222222;
+}
+
+h2 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h3 span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
 header {
     height: 75px;
     width: 1600px;
@@ -29,13 +74,14 @@ main {
 
 menu { 
     margin: 0;
+    padding: 0px;
     display: flex;
     flex-direction: row;
     gap: 33px; 
 
 }
 
-/*  */
+/* common */
 
 .accent {
     color: #F16D7F;
@@ -78,7 +124,7 @@ menu {
     background-image: url(res/payment.svg);
 }
 
-/*  */
+/* showcase */
 
 .showcase {
     width: 100%;
@@ -93,6 +139,8 @@ menu {
     flex-direction: row;
     gap: 69px;
 }
+
+/*  offers */
 
 .offers {
     padding: 65px 0px;
@@ -125,48 +173,50 @@ menu {
     grid-column: 1 / 4;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 20px;
-    text-align: center;
+/* products */
+
+.header > p {
+    color: #9F9F9F;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
 }
 
-h3 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-h3 span {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-}
-
-/* THE BRAND OF LUXERIOUS FASHION */
- 
-h1 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
+.button {
+    box-sizing: border-box;
+    border: 2px solid #F26376;
+    height: 48px;
+    width: 212px;
     
-    color: #222222;
-    margin: 0px;
+    color: #F26376;
 }
 
-h1 span {
+.products_list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 587px);
+    gap: 30px;
+}
 
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+.product_name {
+    font-size: 13px;
+}
+.product_description {
+    font-size: 14px;
+    color: #5d5d5d;
+}
 
-    color: #222222;
+.product_price {
+    font-size: 16px;
+    color: #F16D7F;
+}
+
+.info {
+    padding: 0px 23px;
+}
+
+.product_menu {
+    display: flex;
+    justify-content: center;
 }
