@@ -67,13 +67,6 @@ header {
     background-color: #222222;
 }
 
-main {
-    width: 1600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 menu { 
     margin: 0;
     padding: 0px;
