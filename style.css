@@ -1,5 +1,9 @@
 /* basics */
 
+smth {
+
+}
+
 body {
     margin: 0px;
     display: flex;
@@ -8,15 +12,12 @@ body {
 
     font-family: 'Lato';
     font-style: normal;
-
 }
 
 h1 {
     margin: 0px;
 
     color: #222222;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -25,7 +26,6 @@ h1 {
 h1 span {
     color: #222222;
     font-family: 'Lato';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
@@ -58,12 +58,16 @@ h4 {
 }
 
 header {
+    box-sizing: border-box;
     height: 75px;
-    width: 1600px;
+    width: 100%;
+
     display: flex;
-    flex-direction: row;
+
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
+
     background-color: #222222;
 }
 
@@ -112,10 +116,11 @@ p {
 .menu_button {
     height: 32px; 
     width: 32px; 
+
     background: none;
-    border: none;
     background-position: center;
     background-repeat: no-repeat;
+    border: none;
 }
 
 .search {
@@ -134,11 +139,15 @@ p {
 /* showcase */
 
 .showcase {
-    width: 1600px;
-    background-color: #F1E4E6;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #F1E4E6;
+}
+
+.showcase img {
+    height: 100%;
 }
 
 .title {
@@ -152,8 +161,8 @@ p {
 .offers {
     padding: 65px 0px 100px;
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 260px 180px; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.6fr 0.4fr; 
     gap: 30px;
 }
 
