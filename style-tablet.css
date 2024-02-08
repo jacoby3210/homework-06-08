@@ -4,6 +4,7 @@
 @media (width: 768px) {
     
     body {
+        width: 100%;
         --font_size_01: 44px;
         --font_size_02: 24px;
 
@@ -13,7 +14,7 @@
     }
 
     h1 span {
-        line-height: 100%;
+        line-height: 32px;
     }
 
     header {
@@ -22,11 +23,14 @@
 
     .showcase {
         height: 368px;
+        gap: 40px;
     }
 
     .offers {
         height: 303px;
         width: 735px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.6fr 0.4fr; 
     }
 
     .products_list {
