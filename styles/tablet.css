@@ -1,13 +1,12 @@
 
 /* font variables */
 
-@media (width: 768px) {
+@media only screen and (width: 768px) {
     
     body {
         width: 100%;
         --font_size_01: 44px;
         --font_size_02: 24px;
-
     }
     h1 {
         line-height: 100%;

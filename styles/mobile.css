@@ -1,0 +1,72 @@
+
+/* font variables */
+
+@media only screen and (device-width: 375px) {
+    body {
+        --font_size_01: 44px;
+        /* --font_size_02: 24px; */
+    }
+
+    h1 {
+        line-height: 100%;
+    }
+
+    h1 span {
+        font-size: var(--font_size_03);
+    }
+
+    h2 {
+        margin: 0px;
+        font-weight: 400;
+        font-size: var(--font_size_02);
+        text-align: center;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+    
+    header {
+        padding: 16px;
+        justify-content: space-between;
+    }
+    .profile, 
+    .payment, 
+    .showcase > img {
+        display: none;
+    }
+
+    .title {
+        gap: 15px;
+    }
+
+    .showcase {
+        height: 368px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .offers {
+        padding: 54px 0px 64px;
+        height: max-content;
+        width: max-content;
+        grid-template-columns: repeat(1, 344px);
+        grid-template-rows: repeat(3, 249px); 
+        gap: 32px;
+    }
+
+    .offer_accesories {
+        height: 111px;
+        grid-column: 1 / 1;
+    }
+    .products_list {
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(6, 581px);
+        gap: 20px;
+    }
+    
+    .title {
+        gap: 16px;
+    }
+}

@@ -29,7 +29,8 @@ body {
 
 body {
     margin: 0px auto;
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
 
     display: flex;
     flex-direction: column;
@@ -149,16 +150,16 @@ p {
 }
 
 .search {
-    background-image: url(res/search.svg);
+    background-image: url(../res/search.svg);
 }
 .settings {
-    background-image: url(res/settings.svg);
+    background-image: url(../res/settings.svg);
 }
 .profile  {
-    background-image: url(res/profile.svg);
+    background-image: url(../res/profile.svg);
 }
 .payment  {
-    background-image: url(res/payment.svg);
+    background-image: url(../res/payment.svg);
 }
 
 /* showcase */
@@ -187,12 +188,12 @@ p {
 .offers {
     padding: 65px 0px 100px;
     
-    height: 470px;
-    width:1140px;
+    /* height: 470px; */
+    /* width:1140px; */
 
 
     display: grid;
-    grid-template-columns: repeat(3, 320);
+    grid-template-columns: repeat(3, 320px);
     grid-template-rows: 260px 180px; 
     gap: 30px;
 }
@@ -204,19 +205,19 @@ p {
 }
 
 .offer_for_woman {
-    background-image: url(res/offer_for_woman.png);
+    background-image: url(../res/offer_for_woman.png);
 }
 
 .offer_for_man {
-    background-image: url(res/offer_for_men.jpg);
+    background-image: url(../res/offer_for_men.jpg);
 }
 
 .offer_for_kids {
-    background-image: url(res/offer_for_kids.jpg);
+    background-image: url(../res/offer_for_kids.jpg);
 }
 
 .offer_accesories {
-    background-image: url(res/offer_accessories.jpg);
+    background-image: url(../res/offer_accessories.jpg);
     grid-column: 1 / 4;
 }
 
@@ -226,6 +227,9 @@ p {
     margin: 0px 0px 50px;
 }
 .header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     margin-bottom: 54px;
 }
 
