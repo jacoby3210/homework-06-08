@@ -1,11 +1,35 @@
-/* basics */
+/* variables */
 
-smth {
+body {
+
+    /* element-color */
+
+    /* font-color */
+
+    --color_01: #222222;
+    --color_02: #FFFFFF;
+    --color_03: #F26376;
+    --color_04: #F16D7F;
+    --color_05: #5d5d5d;
+    --color_06: #F8F8F8;
+
+    /* font-size */
+
+    --font_size_01: 48px;
+    --font_size_02: 32px;
+    --font_size_03: 24px;
+    --font_size_04: 16px;
+    --font_size_05: 14px;
+    --font_size_06: 13px;
 
 }
 
+/* basics */
+
+
 body {
     margin: 0px;
+
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -17,38 +41,37 @@ body {
 h1 {
     margin: 0px;
 
-    color: #222222;
+    color: var(--color_01);
     font-weight: 900;
-    font-size: 48px;
+    font-size: var(--font_size_01);
     line-height: 58px;
 }
 
 h1 span {
-    color: #222222;
-    font-family: 'Lato';
+    color: var(--color_01);
     font-weight: 700;
-    font-size: 32px;
+    font-size: var(--font_size_02);
     line-height: 38px;
 }
 
 h2 {
     margin: 0px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: var(--font_size_02);
     text-align: center;
 }
 
 h3 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size_04);
     line-height: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color_02);
 }
 
 h3 span {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--font_size_03);
     line-height: 30px;
     text-align: center;
 }
@@ -59,6 +82,7 @@ h4 {
 
 header {
     box-sizing: border-box;
+    padding: 0px 32px;
     height: 75px;
     width: 100%;
 
@@ -68,7 +92,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
 
-    background-color: #222222;
+    background-color: var(--color_01);
 }
 
 menu { 
@@ -86,22 +110,22 @@ p {
 /* common */
 
 .accent {
-    color: #F16D7F;
+    color: var(--color_04);
 }
 
 .button {
     box-sizing: border-box;
-    border: 2px solid #F26376;
+    border: 2px solid var(--color_03);
     height: 48px;
     width: 212px;
     
-    color: #F26376;
+    color: var(--color_03);
 }
 
 .rectangle {
     height: 92px;
     width: 12px;
-    background-color: #F16D7F;
+    background-color: var(--color_04);
 }
 
 /* header */
@@ -201,7 +225,7 @@ p {
 .header > p {
     margin: 0px;
     color: #9F9F9F;
-    font-size: 14px;
+    font-size: var(--font_size_05);
 
     display: flex;
     justify-content: center;
@@ -215,7 +239,7 @@ p {
 }
 
 .product_sample {
-    background-color: #F8F8F8;
+    background-color: var(--color_06);
 }
 
 .info {
@@ -226,17 +250,17 @@ p {
 }
 
 .product_name {
-    font-size: 13px;
+    font-size: var(--font_size_06);
 }
 
 .product_description {
-    font-size: 14px;
-    color: #5d5d5d;
+    font-size: var(--font_size_05);
+    color: var(--color_05);
 }
 
 .product_price {
-    font-size: 16px;
-    color: #F16D7F;
+    font-size: var(--font_size_04);
+    color: var(--color_04);
 }
 
 .product_menu {

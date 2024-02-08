@@ -1,40 +1,44 @@
 
 /* font variables */
 
-h1 {
-    font-size: 44px;
-    line-height: 44px;
+@media (width: 768px) {
+    
+    body {
+        --font_size_01: 44px;
+        --font_size_02: 24px;
+
+    }
+    h1 {
+        line-height: 100%;
+    }
+
+    h1 span {
+        line-height: 100%;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .showcase {
+        height: 368px;
+    }
+
+    .offers {
+        height: 303px;
+        width: 735px;
+    }
+
+    .products_list {
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 20px;
+    }
+
+    .title {
+        gap: 16px;
+    }
+
 }
 
-h1 span {
-    font-size: 24px;
-    line-height: 24px;
-}
-
-header {
-    padding: 0px 32px;
-    justify-content: space-between;
-}
-.showcase {
-    height: 368px;
-}
-
-.offers {
-    height: 303px;
-    width: 735px;
-}
-
-.products_list {
-    display: grid;
-    grid-template-columns: repeat(2, 360px);
-    grid-template-rows: repeat(3, 581px);
-    gap: 20px;
-}
-
-
-
-.title {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-}
