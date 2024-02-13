@@ -279,3 +279,42 @@ p {
     display: flex;
     justify-content: center;
 }
+
+/* footer */
+footer {
+    width: 100%;
+}
+.features {
+    height: 340px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 360px 360px 360px;
+    justify-content: center;
+
+    background-color: #222224;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature img {
+    height: 40px;
+    width: 40px;
+}
+
+.feature h4 {
+    color: #fbfbfb
+}
+.feature p {
+    color: #fbfbfb;
+    font-weight: 300;
+}
+
+.copyright {
+    height: 80px;
+}
