@@ -38,9 +38,9 @@ body {
     font-style: normal;
 }
 
-h1 {
-    margin: 0px;
+h1, h2, h3, h4, h5, h6, p { margin: 0px;}
 
+h1 {
     color: var(--color_01);
     font-weight: 900;
     font-size: var(--font_size_01);
@@ -55,7 +55,6 @@ h1 span {
 }
 
 h2 {
-    margin: 0px;
     font-weight: 400;
     font-size: var(--font_size_02);
     text-align: center;
@@ -74,10 +73,6 @@ h3 span {
     font-size: var(--font_size_03);
     line-height: 30px;
     text-align: center;
-}
-
-h4 {
-    margin: 0px;
 }
 
 header {
@@ -99,10 +94,6 @@ menu {
     gap: 33px; 
 }
 
-p { 
-    margin: 0px;
-}
-
 section {
     display: grid;
     width: 100%;
@@ -112,21 +103,6 @@ section {
 
 .accent {
     color: var(--color_04);
-}
-
-.button {
-    box-sizing: border-box;
-    border: 2px solid var(--color_03);
-    height: 48px;
-    width: 212px;
-    
-    color: var(--color_03);
-}
-
-.rectangle {
-    height: 92px;
-    width: 12px;
-    background-color: var(--color_04);
 }
 
 /* header */
@@ -141,14 +117,14 @@ section {
     height: 75px;
 }
 
-.logo {
+.menu_top_logo {
     display: flex;
     flex-direction: row;
     gap: 41px;
     align-items: baseline;
 }
 
-.menu_button {
+.menu_top_button {
     height: 32px; 
     width: 32px; 
 
@@ -161,14 +137,17 @@ section {
 .search {
     background-image: url(../res/search.svg);
 }
-.settings {
-    background-image: url(../res/settings.svg);
+
+.payment  {
+    background-image: url(../res/payment.svg);
 }
+
 .profile  {
     background-image: url(../res/profile.svg);
 }
-.payment  {
-    background-image: url(../res/payment.svg);
+
+.settings {
+    background-image: url(../res/settings.svg);
 }
 
 /* showcase */
@@ -189,15 +168,19 @@ section {
     height: 100%;
 }
 
-.title {
+.showcase_title {
     display: flex;
     flex-direction: row;
     gap: 69px;
 }
 
-/*  offers */
+.showcase_title_markdown {
+    height: 92px;
+    width: 12px;
+    background-color: var(--color_04);
+}
 
-.offers {}
+/*  offers */
 
 .offers .content {
     display: grid;
@@ -237,20 +220,20 @@ section {
 .products {
     margin: 0px 0px 50px;
 }
-.header {
+
+.products_title {
     display: flex;
     flex-direction: column;
     gap: 6px;
     margin-bottom: 54px;
 }
 
-.header > p {
-    margin: 0px;
-    color: #9F9F9F;
-    font-size: var(--font_size_05);
-
+.products_title > p {
     display: flex;
     justify-content: center;
+
+    color: #9F9F9F;
+    font-size: var(--font_size_05);
 }
 
 .products_list {
@@ -265,11 +248,11 @@ section {
     background-color: var(--color_06);
 }
 
-.info {
-    padding: 20px 23px;
+.product_info {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+    padding: 20px 23px;
 }
 
 .product_name {
@@ -292,16 +275,30 @@ section {
     justify-content: center;
 }
 
+.product_menu_button {
+    box-sizing: border-box;
+    border: 2px solid var(--color_03);
+    height: 48px;
+    width: 212px;
+    
+    color: var(--color_03);
+}
+
 /* footer */
+
 footer {
     width: 100%;
 }
+
+/* features */
+
 .features {
-    height: 340px;
     display: grid;
     gap: 30px;
     grid-template-columns: 360px 360px 360px;
     justify-content: center;
+
+    height: 340px;
 
     background-color: #222224;
 }
@@ -309,23 +306,18 @@ footer {
 .feature {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
+    color: #fbfbfb;
 }
 
-.feature img {
+.feature_icon {
     height: 40px;
     width: 40px;
 }
 
-.feature h4 {
-    color: #fbfbfb;
-}
-.feature p {
-    color: #fbfbfb;
-    font-weight: 300;
-}
+/* subscribe */
 
 .subscribe {
     height: 448px;
@@ -352,12 +344,12 @@ footer {
     height: 224px;
 }
 
-.subscribe_info img {
+.subscribe_info_icon {
     height: 96px;
     width: 96px;
 }
 
-.subscribe_info p {
+.subscribe_info_text {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
@@ -387,7 +379,7 @@ footer {
     font-size: 18px;
 }
 
-.subscribe_form input {
+.subscribe_form_email {
     box-sizing: border-box;
     padding-left: 20px;
     height: 50px;
@@ -404,7 +396,8 @@ footer {
     font-size: 14px;
     color: #222224;
 }
-.subscribe_form button {
+
+.subscribe_form_button {
     height: 50px;
     width: 100px;
 
@@ -436,28 +429,26 @@ footer {
 }
 
 .copyright .contacts {
-    height: min-content;
     gap: 8px;
+    height: min-content;
 }
 
-.contacts > a {
+.contact {
+
+    padding: 0px;
+    min-height: 16px;
+	min-width: 16px;
     height: 30px;
 	width: 30px;
 
-    padding: 0px;
-	min-height: 16px;
-	min-width: 16px;
     background-color: #FFFFFF;
 	background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .contact_facebook {
 	background-image: url(../res/contact_facebook.svg);
-}
-
-.contact_twitter {
-	background-image: url(../res/contact_twitter.svg);
 }
 
 .contact_inst {
@@ -466,6 +457,10 @@ footer {
 
 .contact_pin {
 	background-image: url(../res/contact_pin.svg);
+}
+
+.contact_twitter {
+	background-image: url(../res/contact_twitter.svg);
 }
 
 .copyright p {
