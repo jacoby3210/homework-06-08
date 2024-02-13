@@ -317,4 +317,48 @@ footer {
 
 .copyright {
     height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222224;
+
+}
+
+.copyright .contacts {
+    height: min-content;
+    gap: 8px;
+}
+
+.contacts > a {
+    height: 30px;
+	width: 30px;
+
+    padding: 0px;
+	min-height: 16px;
+	min-width: 16px;
+    background-color: #FFFFFF;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact_facebook {
+	background-image: url(../res/contact_facebook.svg);
+}
+
+.contact_twitter {
+	background-image: url(../res/contact_twitter.svg);
+}
+
+.contact_inst {
+	background-image: url(../res/contact_inst.svg);
+}
+
+.contact_pin {
+	background-image: url(../res/contact_pin.svg);
+}
+
+.copyright p {
+    color: #fbfbfb;
 }
