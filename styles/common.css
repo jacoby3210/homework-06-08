@@ -26,11 +26,9 @@ body {
 
 /* basics */
 
-
 body {
     margin: 0px auto;
     width: 100%;
-    max-width: 1600px;
 
     display: flex;
     flex-direction: column;
@@ -84,17 +82,13 @@ h4 {
 
 header {
     box-sizing: border-box;
-    padding: 0px 32px;
-    height: 75px;
+    display: grid;
     width: 100%;
-
-    display: flex;
-
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-
     background-color: var(--color_01);
+}
+
+main {
+    width: 100%;
 }
 
 menu { 
@@ -107,6 +101,11 @@ menu {
 
 p { 
     margin: 0px;
+}
+
+section {
+    display: grid;
+    width: 100%;
 }
 
 /* common */
@@ -131,6 +130,16 @@ p {
 }
 
 /* header */
+
+.menu_top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0px 32px;
+    height: 75px;
+}
 
 .logo {
     display: flex;
@@ -165,12 +174,15 @@ p {
 /* showcase */
 
 .showcase {
-    width: 100%;
+    background-color: #F1E4E6;
+}
+
+.showcase .content {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 64px;
-    background-color: #F1E4E6;
+    width: 100%;
 }
 
 .showcase img {
@@ -185,17 +197,16 @@ p {
 
 /*  offers */
 
-.offers {
-    padding: 65px 0px 100px;
-    
-    /* height: 470px; */
-    /* width:1140px; */
+.offers {}
 
-
+.offers .content {
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: 260px 180px; 
-    gap: 30px;
+    justify-content: center;
+
+    padding: 65px 0px 100px;
 }
 
 .offer_sample {
@@ -244,9 +255,10 @@ p {
 
 .products_list {
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(3, 360px);
     grid-template-rows: repeat(2, 581px);
-    gap: 30px;
+    justify-content: center;
 }
 
 .product_sample {
@@ -308,22 +320,119 @@ footer {
 }
 
 .feature h4 {
-    color: #fbfbfb
+    color: #fbfbfb;
 }
 .feature p {
     color: #fbfbfb;
     font-weight: 300;
 }
 
+.subscribe {
+    height: 448px;
+    background-image: url(../res/subscribe_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subscribe .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    
+    width: 360px;
+    height: 224px;
+}
+
+.subscribe_info img {
+    height: 96px;
+    width: 96px;
+}
+
+.subscribe_info p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 560px;
+}
+
+.subscribe_form h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_form h3 span {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.subscribe_form input {
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 50px;
+    width: 250px;
+
+    border: none;
+    border-color: var(--color_04);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    opacity: 0.67;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+}
+.subscribe_form button {
+    height: 50px;
+    width: 100px;
+
+    background-color: var(--color_04);
+    border: none;
+    border-color: var(--color_04);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
 .copyright {
-    height: 80px;
+    background-color: #222224;
+}
+
+.copyright .content {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #222224;
 
+    height: 80px;
 }
 
 .copyright .contacts {
