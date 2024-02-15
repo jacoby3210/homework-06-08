@@ -6,26 +6,39 @@
     body {
         width: 100%;
         --font_size_01: 44px;
-        --font_size_02: 24px;
+        --font_size_02: 22px;
     }
+    
     h1 {
-        line-height: 100%;
+        line-height: 40px;
     }
 
     h1 span {
-        line-height: 32px;
+        line-height: 24px;
     }
 
-    header {
+   
+
+    .content {
+        justify-self: center;
+        max-width: 1600px;
+        width: 768px;
+    }
+
+    .menu_top {
         justify-content: space-between;
     }
 
-    .showcase {
+    .showcase .content{
         height: 368px;
         gap: 40px;
     }
 
-    .offers {
+    .showcase_title {
+        gap: 18px;
+    }
+
+    .offers .content {
         height: 303px;
         width: 735px;
         grid-template-columns: repeat(3, 1fr);
@@ -39,9 +52,30 @@
         gap: 20px;
     }
 
-    .title {
-        gap: 16px;
+    .features {
+        box-sizing: border-box;
+        grid-template-rows: 133px 133px 133px;
+        align-items: center;
+        gap: 55px;
+        justify-content: space-around;
+
+        padding: 48px 0px;
+        height: 610px;
     }
 
-}
+    .subscribe {
 
+        height: 693px;
+    }
+    
+    .subscribe .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .copyright .content {
+        box-sizing: border-box;
+        padding: 0px 33px;
+    }
+}

@@ -32,11 +32,11 @@
     }
     .profile, 
     .payment, 
-    .showcase > img {
+    .showcase  img {
         display: none;
     }
 
-    .title {
+    .showcase_title {
         gap: 15px;
     }
 
@@ -46,13 +46,12 @@
         gap: 40px;
     }
 
-    .offers {
-        padding: 54px 0px 64px;
-        height: max-content;
-        width: max-content;
+    .offers .content {
+        gap: 32px;
         grid-template-columns: repeat(1, 344px);
         grid-template-rows: repeat(3, 249px); 
-        gap: 32px;
+        padding: 54px 0px 64px;
+        height: max-content;
     }
 
     .offer_accesories {
