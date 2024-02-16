@@ -77,6 +77,9 @@ h3 span {
 
 header {
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
     width: 100%;
     background-color: var(--color_01);
 }
@@ -254,14 +257,14 @@ section {
     display: flow-root;
 }
 
-.product_picture:hover::after {
+.product_sample:hover .product_picture::after {
     position: absolute;
     top: 0px; left: 0px;
     width: 100%;
     height: 100%;
     z-index: 999;
-    content: "Add to cart";
-    background-color: red;
+    content: "";
+    background-image: url(../res/product_hover.png);
 }
 
 .product_info {

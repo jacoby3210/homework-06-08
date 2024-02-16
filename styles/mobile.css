@@ -1,7 +1,7 @@
 
 /* font variables */
 
-@media only screen and (device-width: 375px) {
+@media only screen and (width: 375px) {
     body {
         --font_size_01: 44px;
         /* --font_size_02: 24px; */
@@ -89,6 +89,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 50px;
+    }
+
+    .subscribe_form {
+        width: max-content;
     }
 
     .copyright .content {
