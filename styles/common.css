@@ -116,6 +116,7 @@ section {
 
     padding: 0px 32px;
     height: 75px;
+    width: 100%;
 }
 
 .menu_top_logo {
@@ -347,9 +348,7 @@ footer {
 
 .subscribe .content {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .subscribe_info {
@@ -397,6 +396,10 @@ footer {
     display: block;
     font-weight: 400;
     font-size: 18px;
+}
+
+.subscribe_form div {
+    display: flex;
 }
 
 .subscribe_form_email {

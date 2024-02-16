@@ -26,10 +26,11 @@
         justify-content: space-between;
     }
     
-    header {
+    .menu_top {
         padding: 16px;
         justify-content: space-between;
     }
+
     .profile, 
     .payment, 
     .showcase  img {
@@ -67,5 +68,34 @@
     
     .title {
         gap: 16px;
+    }
+
+    .features {
+        box-sizing: border-box;
+        grid-template-rows: 133px 133px 133px;
+        align-items: center;
+        gap: 55px;
+        justify-content: space-around;
+
+        padding: 48px 0px;
+        height: 610px;
+    }
+
+    .subscribe {
+        height: 693px;
+    }
+    
+    .subscribe .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .copyright .content {
+        box-sizing: border-box;
+        align-items:flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        height: 143px;
     }
 }
