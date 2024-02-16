@@ -77,7 +77,6 @@ h3 span {
 
 header {
     box-sizing: border-box;
-    display: grid;
     width: 100%;
     background-color: var(--color_01);
 }
